@@ -1,4 +1,4 @@
-# Deploying a High-Availability WordPress Website with an External Amazon RDS Database to Elastic Beanstalk
+# Scalable-and-Highly-Available-WordPress-Deployment
 
 This project demonstrates how to deploy a high-availability WordPress website with an external Amazon RDS database to Elastic Beanstalk.
 
