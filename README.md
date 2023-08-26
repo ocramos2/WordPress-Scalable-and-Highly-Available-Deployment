@@ -1,4 +1,4 @@
-# Scalable and Highly-Available WordPress Deployment
+# WordPress Scalable and Highly-Available Deployment
 
 Deploy a resilient WordPress website with Amazon RDS and Elastic Beanstalk using streamlined, comprehensive instructions.
 
