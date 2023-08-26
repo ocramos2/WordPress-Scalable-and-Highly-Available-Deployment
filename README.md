@@ -90,3 +90,7 @@ This guide offers efficient steps to deploy a highly available WordPress website
 ## Conclusion
 
 In this project, we demonstrated how to deploy a high-availability WordPress website with an external Amazon RDS database to Elastic Beanstalk. By following these steps, you can create a scalable and reliable WordPress website that can handle high levels of traffic.
+
+## Acknowledgment
+
+This tutorial is adapted from the [AWS Elastic Beanstalk tutorial for deploying a high-availability WordPress website](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/php-hawordpress-tutorial.html) provided by Amazon Web Services. I extend my gratitude to AWS for providing this valuable resource, which served as the foundation for the "Scalable and Highly-Available WordPress Deployment" tutorial.
