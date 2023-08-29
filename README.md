@@ -26,6 +26,7 @@ This guide will walk you through the process of deploying a high-availability Wo
    $ mv wordpress wordpress-beanstalk
    $ cd wordpress-beanstalk
    $ unzip ../eb-php-wordpress-v1.zip
+
    ```
 
 ## Step 3: Launch an Elastic Beanstalk Environment
