@@ -2,7 +2,7 @@
 
 ## Overview
 
-This guide offers steps to deploy a highly available WordPress website on Elastic Beanstalk, integrating an Amazon RDS for robust performance.
+This guide offers steps to deploy a highly available WordPress website on Elastic Beanstalk with Amazon RDS for robust performance.
 
 ## Prerequisites
 1. Sign up for an AWS account if you don't have one already. You can do this by visiting the AWS homepage and clicking on the "Create an AWS Account" button.
