@@ -85,3 +85,5 @@ In this project, we demonstrated how to deploy a high-availability WordPress web
 
 ## Acknowledgment
 This tutorial is adapted from the [AWS Elastic Beanstalk tutorial for deploying a high-availability WordPress website](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/php-hawordpress-tutorial.html) provided by Amazon Web Services. We extend our gratitude to AWS for providing this valuable resource, which served as the foundation for the "Scalable and Highly-Available WordPress Deployment" tutorial.
+
+<img width="1440" alt="Wordpress-project" src="https://github.com/ocramos2/WordPress-Scalable-and-Highly-Available-Deployment/assets/90172092/9538a2e1-9f23-4319-ab3b-b3fba8e623bb">
