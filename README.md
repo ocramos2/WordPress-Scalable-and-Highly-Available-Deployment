@@ -76,6 +76,7 @@ Go back to the WordPress page. Enter the following information: Database=wordpre
 ## Clean Up
 Terminate S3, EC2, RDS, and Elastic Beanstalk instances.
 
+## Conclusion
 In this project, we demonstrated how to deploy a high-availability WordPress website with an external Amazon RDS database to Elastic Beanstalk. By following these steps, you can create a scalable and reliable WordPress website that can handle high levels of traffic.
 
 ## Acknowledgment
