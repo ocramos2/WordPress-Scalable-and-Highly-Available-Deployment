@@ -52,7 +52,7 @@ Repeat the above steps to create another role named `aws-elasticbeanstalk-ec2-ro
 6. Under Instance subnets, choose two availability zones (i.e. us-east-1a and us-east-1b).
 7. Under Choose database subnets, choose two availability zones (i.e. us-east-1a and us-east-1b).
 8. Toggle the enable database button.
-9. Under Database settings, choose mysql as Engine, instance class=db.t2.micro, Storage=5, a username, a password, Availability=Low (one AZ), Database deletion policy=Delete.
+9. Under Database settings, choose mysql as Engine, instance class=db.t2.micro (or t3.micro, which is newer), Storage=5, a username, a password, Availability=Low (one AZ) (multi-AZ means you will incur a fee for high-availability), Database deletion policy=Delete.
 10. Click Next.
 11. Under EC2 security groups, choose default.
 12. Under Fleet composition, On-demand instance.
