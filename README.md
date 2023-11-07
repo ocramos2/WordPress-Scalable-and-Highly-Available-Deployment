@@ -72,9 +72,9 @@ Repeat the above steps to create another role named `aws-elasticbeanstalk-ec2-ro
 2. On the left menu, choose "Databases".
 3. Choose the database you just created.
 4. Under Configuration, find DB name.
-5. Under Connectivity & security, find the Endpoint.
+5. Under Connectivity & security, find the Endpoint address.
 6. Go back to the WordPress page.
-7. Enter the following information: Database=wordpress, Username=ebdb, Password=any 8-characters, Database Host=Endpoint.
+7. Enter the following information: Database=wordpress, Username=ebdb, Password=any 8-characters, Database Host=Endpoint address.
 8. Click Submit.
 
 ## Clean Up
