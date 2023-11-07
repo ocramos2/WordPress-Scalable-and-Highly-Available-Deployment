@@ -3,6 +3,8 @@
 ## Overview
 This guide provides steps to deploy a highly available WordPress website on AWS Elastic Beanstalk with Amazon RDS for robust performance. By following these steps, you can create a scalable and reliable WordPress website that can handle high levels of traffic.
 
+<img width="1440" alt="Wordpress-project" src="https://github.com/ocramos2/WordPress-Scalable-and-Highly-Available-Deployment/assets/90172092/9538a2e1-9f23-4319-ab3b-b3fba8e623bb">
+
 ## WordPress Setup
 1. Download and extract WordPress from the official WordPress website.
 2. Compress all files inside the extracted folder.
@@ -85,5 +87,3 @@ In this project, we demonstrated how to deploy a high-availability WordPress web
 
 ## Acknowledgment
 This tutorial is adapted from the [AWS Elastic Beanstalk tutorial for deploying a high-availability WordPress website](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/php-hawordpress-tutorial.html) provided by Amazon Web Services. We extend our gratitude to AWS for providing this valuable resource, which served as the foundation for the "Scalable and Highly-Available WordPress Deployment" tutorial.
-
-<img width="1440" alt="Wordpress-project" src="https://github.com/ocramos2/WordPress-Scalable-and-Highly-Available-Deployment/assets/90172092/9538a2e1-9f23-4319-ab3b-b3fba8e623bb">
