@@ -4,9 +4,9 @@
 This guide provides steps to deploy a highly available WordPress website on AWS Elastic Beanstalk with Amazon RDS for robust performance. By following these steps, you can create a scalable and reliable WordPress website that can handle high levels of traffic.
 
 ## WordPress Setup
-- Download and extract WordPress from the official WordPress website.
-- Compress all files inside the extracted folder.
-- Move the new `wordpress.zip` to the Desktop for upload.
+1. Download and extract WordPress from the official WordPress website.
+2. Compress all files inside the extracted folder.
+3. Move the new `wordpress.zip` to the Desktop for upload.
 
 ## IAM Role Creation
 1. Open IAM on a separate tab.
@@ -21,8 +21,8 @@ This guide provides steps to deploy a highly available WordPress website on AWS 
 10. Under Name, review, and create, click on Create role.
 
 Repeat the above steps to create another role named `aws-elasticbeanstalk-ec2-role` with the following changes:
-- In step 5, choose EC2 for the Use case.
-- In step 8, use `AmazonS3FullAccess` and `CloudWatchAgentServerPolicy` for the permission policies.
+1. In step 5, choose EC2 for the Use case.
+2. In step 8, use `AmazonS3FullAccess` and `CloudWatchAgentServerPolicy` for the permission policies.
 
 ## Elastic Beanstalk Setup
 1. Open Elastic Beanstalk.
@@ -61,8 +61,11 @@ Repeat the above steps to create another role named `aws-elasticbeanstalk-ec2-ro
 15. Under Health reporting, choose Basic.
 16. Click Next.
 17. Under Review, click Submit.
-
-Wait until the Elastic Beanstalk environment finishes launching. Under Environment overview, Health should be Green. Under Domain, click on the link. You should see a WordPress page. Select a language and click Continue. Click on Let's go!
+18. Wait until the Elastic Beanstalk environment finishes launching.
+19. Under Environment overview, Health should be Green.
+20. Under Domain, click on the link.
+21. When you see the WordPress page, select a language and click Continue.
+22. Click on Let's go!
 
 ## Database Setup
 1. Open RDS on a separate tab.
@@ -70,11 +73,12 @@ Wait until the Elastic Beanstalk environment finishes launching. Under Environme
 3. Choose the database you just created.
 4. Under Configuration, find DB name.
 5. Under Connectivity & security, find the Endpoint.
-
-Go back to the WordPress page. Enter the following information: Database=wordpress, Username=ebdb, Password=any 8-characters, Database Host=Endpoint. Click Submit.
+6. Go back to the WordPress page.
+7. Enter the following information: Database=wordpress, Username=ebdb, Password=any 8-characters, Database Host=Endpoint.
+8. Click Submit.
 
 ## Clean Up
-Terminate S3, EC2, RDS, and Elastic Beanstalk instances.
+Terminate Elastic Beanstalk, RDS, S3 (might need to delete bucket policy), and EC2 instances.
 
 ## Conclusion
 In this project, we demonstrated how to deploy a high-availability WordPress website with an external Amazon RDS database to Elastic Beanstalk. By following these steps, you can create a scalable and reliable WordPress website that can handle high levels of traffic.
