@@ -16,8 +16,8 @@ This guide provides steps to deploy a highly available WordPress website on AWS 
 3. Click on "Create role" and name it `aws-elasticbeanstalk-service-role`.
 4. Under "Trusted entity type", choose "AWS service".
 5. Under "Use case", choose "Elastic Beanstalk".
-6. For "Choose a use case for the specified service", select "Elastic Beanstalk", then Next.
-7. Under permission policies, use `AWSElasticBeanstalkServiceRolePolicy`, then Next.
+6. For "Choose a use case for the specified service", select "Elastic Beanstalk", then click "Next".
+7. Under permission policies, use `AWSElasticBeanstalkServiceRolePolicy`, then click "Next".
 8. Under "Name, review, and create", click on "Create role".
 
 Repeat the above steps to create another role named `aws-elasticbeanstalk-ec2-role` with the following changes:
@@ -40,28 +40,28 @@ Repeat the above steps to create another role named `aws-elasticbeanstalk-ec2-ro
 13. If you upload your code, choose "Local file".
 14. Then upload the `wordpress.zip` file you created.
 15. Under "Version label", type `v1`.
-16. Under "Presets", choose "Single instance" (e.g. free tier eligible), then click Next.
+16. Under "Presets", choose "Single instance" (e.g. free tier eligible), then click "Next".
 
 ## Service Access and VPC Settings
 1. Under "Service access", choose "Use an existing service role".
 2. Under "Existing service roles", choose `aws-elasticbeanstalk-service-role`.
-3. Under "EC2 instance profile", choose `aws-elasticbeanstalk-ec2-role`, then click Next.
+3. Under "EC2 instance profile", choose `aws-elasticbeanstalk-ec2-role`, then click "Next".
 4. Under "VPC", choose the default VPC.
 5. Under "Instance subnets", choose two availability zones (i.e. `us-east-1a` and `us-east-1b`).
-6. Under Choose database subnets, choose two availability zones (`i.e. us-east-1a` and `us-east-1b`).
+6. Under Choose database subnets, choose two availability zones (i.e. `us-east-1a` and `us-east-1b`).
 7. Toggle the "enable database" button.
-8. Under Database settings, choose Engine=`mysql`, instance class=`db.t3.micro` (e.g. newer than db.t2.micro), Storage=`5`, `a username`, `a password`, Availability=`Low (one AZ)` (e.g. multi-AZ incurs a fee due to high-availability), Database deletion policy=`Delete`.
-9. Click Next.
+8. Under Database settings, choose Engine=`mysql`, instance class=`db.t3.micro` (e.g. newer and cheaper than db.t2.micro), Storage=`5`, `a username`, `a password`, Availability=`Low (one AZ)` (e.g. multi-AZ incurs a fee due to high-availability), Database deletion policy=`Delete`.
+9. Click "Next".
 10. Under "EC2 security groups", choose default.
 11. Under "Fleet composition", choose "On-demand instance".
-12. Under "instance types", choose "t3.micro", then click Next.
-15. Under "Health reporting", choose "Basic", then click Next.
-16. Under "Review", click "Submit".
-18. Wait until the Elastic Beanstalk environment finishes launching.
-19. Under "Environment overview", wait until Health is Green.
-20. Under "Domain", click on the link.
-21. When you see the WordPress page, select a language, then click "Continue".
-22. Click on "Let's go!"
+12. Under "instance types", choose "t3.micro", then click "Next".
+13. Under "Health reporting", choose "Basic", then click "Next".
+14. Under "Review", click ""Submit"".
+15. Wait until the Elastic Beanstalk environment finishes launching.
+16. Under "Environment overview", wait until Health is Green.
+17. Under "Domain", click on the link.
+18. When you see the WordPress page, select a language, then click "Continue".
+19. Click on "Let's go!"
 
 ## Database Setup
 1. Open RDS on a separate tab.
@@ -71,10 +71,10 @@ Repeat the above steps to create another role named `aws-elasticbeanstalk-ec2-ro
 5. Under "Connectivity & security", find the Endpoint address.
 6. Go back to the WordPress page.
 7. Enter the following information: Database=`wordpress`, Username=`ebdb`, Password=`any 8-characters`, Database Host=`Endpoint address`.
-8. Click Submit.
+8. Click "Submit".
 
 ## Clean Up
-Empty and terminate Elastic Beanstalk, RDS, S3 (might need to delete bucket policy), and EC2 instances.
+Empty and terminate Elastic Beanstalk, RDS, S3 (e.g. might need to delete bucket policy), and EC2 instances.
 
 ## Conclusion
 In this project, we demonstrated how to deploy a high-availability WordPress website with an external Amazon RDS database to Elastic Beanstalk. By following these steps, we have created a scalable and reliable WordPress website that can handle high levels of traffic. Feel free to message me with code improvement suggestions.
